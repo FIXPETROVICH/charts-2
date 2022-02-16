@@ -64,7 +64,7 @@ haproxy:
   ## Service type for HAProxy
   ##
   service:
-    type: ClusterIP
+    type: LoadBalancer
     loadBalancerIP:
     annotations: {}
   serviceAccount:
