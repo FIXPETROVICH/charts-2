@@ -65,6 +65,7 @@ haproxy:
   ##
   service:
     type: NodePort
+    port: 30123
     #loadBalancerIP:
     annotations: {}
   serviceAccount:
