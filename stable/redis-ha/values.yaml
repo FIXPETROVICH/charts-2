@@ -64,17 +64,8 @@ haproxy:
   ## Service type for HAProxy
   ##
   service:
-    type: NodePort
-    selector:
-    app: redisha
-  ports:
-      # By default and for convenience, the `targetPort` is set to the same value as the `port` field.
-    - port: 80
-      targetPort: 80
-      # Optional field
-      # By default and for convenience, the Kubernetes control plane will allocate a port from a range (default: 30000-32767)
-      nodePort: 30007
-#    loadBalancerIP:
+    type: ClusterIP
+    loadBalancerIP:
     annotations: {}
   serviceAccount:
     create: true
