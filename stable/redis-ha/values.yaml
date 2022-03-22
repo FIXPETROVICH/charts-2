@@ -64,8 +64,8 @@ haproxy:
   ## Service type for HAProxy
   ##
   service:
-    type: NodePort
-    port: 30123
+    type: LoadBalancer
+    #port: 30123
     #loadBalancerIP:
     annotations: {}
   serviceAccount:
